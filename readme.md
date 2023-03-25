@@ -19,3 +19,4 @@ hugo server
 
 - [Hugo Documentation](https://gohugo.io/documentation/)
 - [Luke's Hugo Theme](https://github.com/LukeSmithxyz/lugo)
+- [Hugo no-style-please Theme](https://github.com/Masellum/hugo-theme-nostyleplease)
