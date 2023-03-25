@@ -2,11 +2,20 @@
 <html lang="{{ .Site.Language }}">
 
 <head>
-    <title>{{ if not .IsHome }}{{ .Title | title }} | {{ end }}{{ .Site.Title }}</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+        {{ if not .IsHome }}
+        {{ .Title }}
+        {{ else }}
+        {{ .Site.Title }}
+        {{ end }}
+    </title>
+
     {{ $sass := resources.Get "styles/style.scss" }}
     {{ $style := $sass | resources.ToCSS}}
     <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
-
 </head>
 
 <body>
