@@ -1,3 +1,8 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
+
+[params]
+    # favicon = ""
+    # projects = true
+    enableRSS = true
