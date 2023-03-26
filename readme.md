@@ -15,6 +15,22 @@ echo 'theme = "yugo"' >> config.toml
 hugo server
 ```
 
+put homepage content in root layout/index.html
+not the theme folder
+
+# Roadmap
+
+See `CHANGELONG.md` for changes.
+
+- [x] main page templates
+- [x] initial sass files
+- [x] basic content styling
+- [ ] back links
+- [ ] more components (posts list, image gallery, latex)
+- [ ] more content styling
+
+---
+
 ## references and learning resources
 
 - [Hugo Documentation](https://gohugo.io/documentation/)
