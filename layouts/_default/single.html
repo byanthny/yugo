@@ -1,4 +1,7 @@
 {{ define "main" }}
+
+<a class="black-link">...</a>
+<p style="text-align:right">{{.Date.Format "2006-01-02"}}</p>
 <h1 class="title">{{ .Title | title }}</h1>
 {{ .Content }}
 {{ end }}
