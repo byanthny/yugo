@@ -28,6 +28,7 @@ See `CHANGELONG.md` for changes.
 - [ ] back links
 - [ ] more components (posts list, image gallery, latex)
 - [ ] more content styling
+- [ ] rss
 
 ---
 
