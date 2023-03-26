@@ -9,8 +9,8 @@ img {
 }
 
 blockquote {
-  font-style: italic;
-  font-size: $font-md;
+  border-left: solid 1px rgba($text-color, 0.4);
+  padding-left: 25px;
 }
 
 figcaption {

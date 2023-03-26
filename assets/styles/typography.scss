@@ -1,18 +1,30 @@
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin-top: 3rem;
+  margin-top: $font-lg;
 }
 
 a {
   color: $link-color;
   text-decoration: underline;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: $text-color;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: $font-lg;
+  color: rgba($text-color, 0.9);
+}
+
+.title {
+  font-size: $font-xl;
 }
