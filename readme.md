@@ -25,10 +25,16 @@ See `CHANGELONG.md` for changes.
 - [x] main page templates
 - [x] initial sass files
 - [x] basic content styling
-- [ ] back links
-- [ ] more components (posts list, image gallery, latex)
+- [x] back-links leading to homepage
+- [ ] more relative back-links
+- [ ] more components & short codes (posts list, image gallery, latex)
 - [ ] more content styling
 - [ ] rss
+- [ ] refactor using partials
+
+- [ ] fix sizing of body
+
+TODO: work on styling
 
 ---
 
