@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{ .Content }}
+{{- range site.Sections }}
+  {{- if .RegularPages }}
+<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+<ul>
+  {{- range .RegularPages }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{- if not .Date.IsZero }}
+    <span class="meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time></span>
+    {{- end }}
+  </li>
+  {{- end }}
+</ul>
+  {{- end }}
+{{- end }}
+{{ end }}

@@ -1,0 +1,24 @@
+baseURL = "https://example.org/"
+title = "yugo"
+locale = "en-us"
+theme = "yugo"
+
+[params]
+  description = "an example site for yugo, a basic dark hugo theme"
+
+[menus]
+  [[menus.main]]
+    name = "posts"
+    pageRef = "/posts"
+    weight = 10
+  [[menus.main]]
+    name = "about"
+    pageRef = "/about"
+    weight = 20
+
+[outputs]
+  home = ["html", "rss"]
+
+[markup.highlight]
+  style = "github-dark"
+  noClasses = true

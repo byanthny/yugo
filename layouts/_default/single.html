@@ -1,7 +1,13 @@
 {{ define "main" }}
-
-<a class="black-link">...</a>
-<p style="text-align:right">{{.Date.Format "2006-01-02"}}</p>
-<h1 class="title">{{ .Title | title }}</h1>
-{{ .Content }}
+<article>
+  <h1>{{ .Title }}</h1>
+  <p class="meta">
+    {{- if not .Date.IsZero }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time> · {{ end -}}
+    {{ .ReadingTime }} min
+  </p>
+  {{ .Content }}
+</article>
+{{- with .Parent }}
+<p class="back"><a href="{{ .RelPermalink }}">← {{ .Title | lower }}</a></p>
+{{- end }}
 {{ end }}
