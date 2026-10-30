@@ -3,6 +3,8 @@ title = "yugo"
 locale = "en-us"
 theme = "yugo"
 
+disableKinds = ["taxonomy", "term"]
+
 [params]
   description = "an example site for yugo, a basic dark hugo theme"
 

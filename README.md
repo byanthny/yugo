@@ -2,11 +2,13 @@
 
 a basic dark hugo theme: black background, white text, cyan links, one column.
 
+[live demo](https://yugo-theme.vercel.app/) · [the kitchen sink](https://yugo-theme.vercel.app/posts/kitchen-sink/), which has one of every element the theme styles
+
 ![the example site's home page](images/screenshot.png)
 
 ## install
 
-needs hugo 0.128.0 or newer. the standard build works, extended isn't needed.
+needs hugo 0.158.0 or newer. the standard build works, extended isn't needed.
 
 as a git submodule:
 
@@ -39,6 +41,11 @@ then in `hugo.toml`:
 ```toml
 [params]
   description = "the default meta description"
+  stickyNav = true
+  favicon = "/favicon.svg"
+  appleTouchIcon = "/apple-touch-icon.png"
+  themeColor = "#000000"
+  images = ["/og.png"]
 
 [menus]
   [[menus.main]]
@@ -58,9 +65,15 @@ then in `hugo.toml`:
 ```
 
 - `params.description`: used for `<meta name="description">` when a page has no `description` of its own
+- `params.stickyNav`: keeps the nav on screen while you scroll. off unless set
+- `params.favicon` / `params.appleTouchIcon`: paths to your own icons in `static/`. no tag is written if unset, so nothing 404s
+- `params.themeColor`: the browser chrome color on mobile. `#000000` unless set
+- `params.images`: the social card image, used when a page sets none of its own. a page can override it with `images` in its front matter
 - `menus.main`: links in the nav, after the site title. with no menu, the nav is just the title
 - `outputs`: the home page as html plus the rss feed at `/index.xml`
 - `markup.highlight`: the code block colors. any chroma style works, dark ones fit
+
+open graph and twitter card tags are written from each page's title and description, so links shared to chat apps and social sites show something.
 
 ## content
 

@@ -45,6 +45,19 @@ nav {
 nav a { color: var(--muted); }
 nav .site-title { margin-right: auto; color: var(--fg); font-weight: 600; }
 
+/* optional: params.stickyNav keeps the nav on screen. the nav shares main's
+   44rem column, so its own background covers anything scrolling under it */
+
+nav.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--ink);
+  padding-bottom: 1rem;
+}
+
+html:has(nav.sticky) { scroll-padding-top: 5rem; }
+
 footer {
   color: var(--muted);
   font-size: .875rem;

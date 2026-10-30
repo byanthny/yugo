@@ -3,3 +3,5 @@
 exampleSite/public/
 exampleSite/resources/
 .DS_Store
+.vercel
+.env*

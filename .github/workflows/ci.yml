@@ -10,11 +10,15 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        hugo-version: ['0.158.0', 'latest']
     steps:
       - uses: actions/checkout@v5
       - uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
+          hugo-version: ${{ matrix.hugo-version }}
           extended: true
       - name: build the example site
         run: hugo -s exampleSite --themesDir ../.. --minify --printUnusedTemplates
