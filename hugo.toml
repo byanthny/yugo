@@ -1,0 +1,6 @@
+# the hugo versions this theme supports. themes.gohugo.io reads this.
+# no `extended` key on purpose: yugo needs only the standard build.
+
+[module]
+  [module.hugoVersion]
+    min = "0.158.0"

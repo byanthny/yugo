@@ -4,7 +4,7 @@ a basic dark hugo theme: black background, white text, cyan links, one column.
 
 [live demo](https://yugo-theme.vercel.app/) · [the kitchen sink](https://yugo-theme.vercel.app/posts/kitchen-sink/), which has one of every element the theme styles
 
-![the example site's home page](images/screenshot.png)
+![the example site's home page](https://raw.githubusercontent.com/byanthny/yugo/main/images/screenshot.png)
 
 ## install
 

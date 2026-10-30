@@ -1,5 +1,10 @@
 # changelog
 
+## v1.0.1 (2026-10-30)
+
+- `hugo.toml` declares the supported hugo versions under `[module.hugoVersion]`, which is what themes.gohugo.io reads. `theme.toml`'s `min_version` is a different field and is not a substitute
+- the readme's screenshot uses an absolute url. relative paths work on github but break on the theme's page at themes.gohugo.io
+
 ## v1.0.0 (2026-10-14)
 
 - builds on current hugo again. the sass and `resources.ToCSS` (removed in hugo 0.128) are replaced by one plain css file, minified and fingerprinted, so any hugo build works
