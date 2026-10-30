@@ -1,0 +1,13 @@
+name = "yugo"
+license = "MIT"
+licenselink = "https://github.com/byanthny/yugo/blob/main/LICENSE"
+description = "a basic dark hugo theme: black, white text, cyan links, one column"
+homepage = "https://github.com/byanthny/yugo"
+demosite = "https://yugo-theme.vercel.app/"
+tags = ["dark", "minimal", "blog", "simple"]
+features = ["rss", "syntax highlighting", "responsive"]
+min_version = "0.158.0"
+
+[author]
+  name = "Anthony Das"
+  homepage = "https://anthnydas.com"
