@@ -1,7 +1,7 @@
 name = "yugo"
 license = "MIT"
 licenselink = "https://github.com/byanthny/yugo/blob/main/LICENSE"
-description = "a minimal dark hugo theme. black background, white text, cyan links, one column. plain css, no javascript, no build step."
+description = "your go to basic hugo theme. black background, white text, cyan links, one column. plain css, no javascript, no build step."
 homepage = "https://github.com/byanthny/yugo"
 demosite = "https://yugo-theme.vercel.app/"
 tags = ["blog", "dark", "minimal", "personal"]
