@@ -1,5 +1,12 @@
 # changelog
 
+## v1.0.2 (2026-10-30)
+
+- the footer no longer links back to yugo on your site. set `params.themeCredit` if you want to credit it, otherwise the footer is just your title and the year
+- tags fixed for the theme gallery. it filters tags against an allowlist and silently drops the rest, so `simple` was never showing. now `blog`, `dark`, `minimal`, `personal`
+- a short feature list and clearer description, so it's easier to tell what the theme is without installing it
+- the readme asks for contributions instead of saying v1 is done, and says what will and won't be accepted
+
 ## v1.0.1 (2026-10-30)
 
 - `hugo.toml` declares the supported hugo versions under `[module.hugoVersion]`, which is what themes.gohugo.io reads. `theme.toml`'s `min_version` is a different field and is not a substitute

@@ -6,6 +6,12 @@ a basic dark hugo theme: black background, white text, cyan links, one column.
 
 ![the example site's home page](https://raw.githubusercontent.com/byanthny/yugo/main/images/screenshot.png)
 
+- one column, black background, white text, cyan links
+- plain css. no javascript, no build step, standard hugo is enough
+- open graph and twitter cards, rss, syntax highlighting, reading time
+- wcag aa contrast throughout
+- optional sticky nav, favicon, theme color, footer credit
+
 ## install
 
 needs hugo 0.158.0 or newer. the standard build works, extended isn't needed.
@@ -46,6 +52,7 @@ then in `hugo.toml`:
   appleTouchIcon = "/apple-touch-icon.png"
   themeColor = "#000000"
   images = ["/og.png"]
+  themeCredit = true
 
 [menus]
   [[menus.main]]
@@ -69,6 +76,7 @@ then in `hugo.toml`:
 - `params.favicon` / `params.appleTouchIcon`: paths to your own icons in `static/`. no tag is written if unset, so nothing 404s
 - `params.themeColor`: the browser chrome color on mobile. `#000000` unless set
 - `params.images`: the social card image, used when a page sets none of its own. a page can override it with `images` in its front matter
+- `params.themeCredit`: adds "built with hugo and yugo" to the footer. off unless set, so your footer stays yours
 - `menus.main`: links in the nav, after the site title. with no menu, the nav is just the title
 - `outputs`: the home page as html plus the rss feed at `/index.xml`
 - `markup.highlight`: the code block colors. any chroma style works, dark ones fit
@@ -89,9 +97,25 @@ from the theme folder (it has to be named `yugo`):
 hugo server -s exampleSite --themesDir ../..
 ```
 
-## maintenance
+## contributing
 
-v1 is done. no roadmap. issues and small prs welcome, fixes land when i get to them.
+contributions are welcome. i'm not actively developing this one, so replies may be slow, but issues
+and prs do get read and merged.
+
+likely yes:
+
+- bug fixes
+- accessibility fixes
+- keeping up with hugo releases
+- documentation that makes the theme easier to pick up
+
+likely no:
+
+- javascript
+- a build step or css framework
+- new layouts or features that make it less minimal
+
+if you're unsure whether something fits, open an issue first and ask rather than building it.
 
 changes are in [CHANGELOG.md](CHANGELOG.md).
 

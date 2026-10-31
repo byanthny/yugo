@@ -1,3 +1,5 @@
 <footer>
-  <p>{{ site.Title }} · {{ now.Year }} · built with hugo and <a href="https://github.com/byanthny/yugo">yugo</a></p>
+  <p>{{ site.Title }} · {{ now.Year }}
+  {{- with site.Params.themeCredit }} · built with <a href="https://gohugo.io">hugo</a> and <a href="https://github.com/byanthny/yugo">yugo</a>{{ end -}}
+  </p>
 </footer>
